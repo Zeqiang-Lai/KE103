@@ -1,0 +1,24 @@
+# Named Entity Recognition with Keras
+
+1. Prepare the dataset
+
+Put dataset into `data` directory and the directory should contain three file.
+```
+/data
+    test.txt
+    train.txt
+    valid.txt
+```
+
+2. Download the embedding
+
+http://nlp.stanford.edu/projects/glove/
+
+After you download the file, extract it into `embedding` directory.
+
+3. Training
+
+```
+python train.py
+```
+

@@ -1,0 +1,9 @@
+{
+    "batch_size": 128,
+    "num_epochs": 50,
+    "dropout": 0.55,
+
+    "word_lstm_size": 100,
+    "domain_lstm_size": 25,
+    "fc_dim": 100
+}

@@ -1,0 +1,50 @@
+# Sequence-Labeling-with-Keras
+*Author: Zeqiang Lai*
+
+Note: all scripts must be run in `sequence-labeling-keras`
+
+## Requirement
+1. tensorflow
+2. keras
+3. (optional) [keras_contrib](https://github.com/keras-team/keras-contrib)
+4. python3
+
+## Quickstart
+
+### Download dataset
+
+We use semeval 2014 Aspect Based Sentiment Analysis [(ABSA)](http://alt.qcri.org/semeval2014/task4/) dataset.
+
+1. __Download the dataset__ `Laptop_Train_v2.xml` and `Restaurants_Train_v2.xml` on [Semeval](http://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and save it under the `data/semeval` directory.
+
+2. __Build the dataset__ Run the following script
+```
+python build_semeval_dataset.py
+python build_vocab.py
+python build_vocab.py --data_dir data/semeval/laptop
+```
+It will extract the sentences and labels from the dataset, split it into train/val/test and save it in a convenient format for our model.
+
+*Debug* If you get some errors, check that you downloaded the right file and saved it in the right directory.
+
+### Download embedding
+
+1. __Download the general embedding__
+
+2. __Download the domain embedding__
+
+3. __Process the embeddings__ Run the following script
+```
+python build_embedding.py
+```
+
+
+### Training
+
+We have some problems to save and reload a pretrained model. To see the result of experiment, you have to train a new model by yourself.
+
+It costs no more than 5 minutes on CPU (even faster on GPU). Run the following scripts:
+
+```
+python train.py
+```

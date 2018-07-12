@@ -1,0 +1,6 @@
+numpy
+Pillow
+tensorflow
+keras
+tqdm
+seqeval
