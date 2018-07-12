@@ -1,0 +1,13 @@
+# Skip-gram Model with Tensorflow
+
+1. Download the dataset
+
+text8: http://mattmahoney.net/dc/text8.zip
+
+After you download the file, extract it into `data` directory.
+
+2. Training
+```
+python Skip_gram.py
+```
+
